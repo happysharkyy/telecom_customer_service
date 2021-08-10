@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ct-common" target="1.5" />
-      <module name="ct-producer" target="1.5" />
-      <module name="telecom_customer_service" target="1.5" />
+      <module name="ct-common" target="1.8" />
+      <module name="ct-producer" target="1.8" />
+      <module name="telecom_customer_service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
