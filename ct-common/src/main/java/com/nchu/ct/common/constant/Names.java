@@ -1,20 +1,31 @@
 package com.nchu.ct.common.constant;
 
 import com.nchu.ct.common.bean.Val;
-/*
-常量枚举类
+
+/**
+ * 名称常量枚举类
  */
 public enum Names implements Val {
-    NAMESPACE("ct");
+    NAMESPACE("ct")
+    ,TABLE("ct:calllog")
+    ,CF_CALLER("caller")
+    ,CF_CALLEE("callee")
+    ,CF_INFO("info")
+    ,TOPIC("ct");
+
 
     private String name;
 
-    private Names(String ct) {
-        this.name = ct;
+    private Names( String name ) {
+        this.name = name;
     }
 
-    @Override
-    public Object value() {
-        return null;
+
+    public void setValue(Object val) {
+       this.name = (String)val;
+    }
+
+    public String getValue() {
+        return name;
     }
 }

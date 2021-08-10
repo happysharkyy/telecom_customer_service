@@ -10,5 +10,10 @@
         <module name="ct-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ct-common" target="1.5" />
+      <module name="ct-producer" target="1.5" />
+      <module name="telecom_customer_service" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
